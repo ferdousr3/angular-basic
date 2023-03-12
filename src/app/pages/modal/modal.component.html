@@ -1,0 +1,74 @@
+<button
+  class="btn py-2 custom-outline-btn-2 ms-4 border-0 mt-0 d-flex align-items-center"
+  (click)="openModal(confirmModal)"
+  type="button"
+>
+  <i class="bi bi-plus-lg me-1 mt-0"></i>
+  <span class="">Modal </span>
+</button>
+
+<ng-template #confirmModal let-modal class="modal-dialog-centered">
+  <div class="p-4">
+    <h4 class="modal-title ps-3 text-black-50 fw-600">Modal</h4>
+    <div class="modal-body">
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-12">
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            id="validationCustom01"
+            required
+            placeholder="Name on Card"
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="col-md-12">
+          <input
+            type="email"
+            class="form-control form-control-lg"
+            id="validationCustom02"
+            required
+            placeholder="Card number"
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            id="validationCustom03"
+            required
+            placeholder="MM/YY"
+          />
+          <div class="invalid-feedback">Please provide a valid city.</div>
+        </div>
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            id="validationCustom03"
+            required
+            placeholder="CVV"
+          />
+          <div class="invalid-feedback">Please provide a valid city.</div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer border-0 m-0">
+      <button
+        type="button"
+        class="btn custom-outline-btn rounded-3"
+        (click)="modal.close('Close click')"
+      >
+        Cancel
+      </button>
+      <button
+        type="button"
+        class="btn btn-light shadow-none bg-primary text-white"
+      >
+        Add
+      </button>
+    </div>
+  </div>
+</ng-template>
