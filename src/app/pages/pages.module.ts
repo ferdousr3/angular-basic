@@ -8,10 +8,19 @@ import { ModalComponent } from './modal/modal.component';
 import { ButtonComponent } from '../shared/components/button/button.component';
 import { NewButtonComponent } from '../shared/components/ne-button/neButton.component';
 import { DatabindComponent } from './databind/databind.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [NotFoundComponent, ProfileComponent, UserComponent, ModalComponent, ButtonComponent,NewButtonComponent, DatabindComponent],
-  imports: [CommonModule, PagesRoutingModule],
+  declarations: [
+    NotFoundComponent,
+    ProfileComponent,
+    UserComponent,
+    ModalComponent,
+    ButtonComponent,
+    NewButtonComponent,
+    DatabindComponent,
+  ],
+  imports: [CommonModule, PagesRoutingModule, FormsModule],
 })
 export class PagesModule {}

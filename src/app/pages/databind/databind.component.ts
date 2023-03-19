@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-
 @Component({
   selector: 'app-databind',
   templateUrl: './databind.component.html',
@@ -15,5 +14,7 @@ export class DatabindComponent {
     this.searchValue = (<HTMLInputElement>eventData.target).value;
   }
 
-  
+  onSubmit(form: NgForm) {
+    console.log(form.value);
+  }
 }
