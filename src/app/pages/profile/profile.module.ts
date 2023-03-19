@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { ProfileRoutingModule } from './profile-routing.module';
 import { AccountComponent } from './account/account.component';
 import { BillingComponent } from './billing/billing.component';

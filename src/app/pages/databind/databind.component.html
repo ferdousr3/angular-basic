@@ -1,0 +1,10 @@
+<p>{{ myName }}</p>
+<img [src]="myImage" alt="" width="50px" height="50px" />
+<div class="mt-4">
+  <h2>Search</h2>
+  <input type="text" (input)="changeSearchValue($event)" />
+  <br />
+  Search Value {{ searchValue }}
+</div>
+
+

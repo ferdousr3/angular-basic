@@ -6,6 +6,7 @@ const nestedMenuItems = [
     subItems: [
       { title: 'Profile', link: 'profile/account' },
       { title: 'Billing', link: 'profile/billing' },
+      { title: 'Data Bind', link: 'profile/data-bind' },
     ],
   },
   {

@@ -7,10 +7,11 @@ import { UserComponent } from './user/user.component';
 import { ModalComponent } from './modal/modal.component';
 import { ButtonComponent } from '../shared/components/button/button.component';
 import { NewButtonComponent } from '../shared/components/ne-button/neButton.component';
+import { DatabindComponent } from './databind/databind.component';
 
 
 @NgModule({
-  declarations: [NotFoundComponent, ProfileComponent, UserComponent, ModalComponent, ButtonComponent,NewButtonComponent],
+  declarations: [NotFoundComponent, ProfileComponent, UserComponent, ModalComponent, ButtonComponent,NewButtonComponent, DatabindComponent],
   imports: [CommonModule, PagesRoutingModule],
 })
 export class PagesModule {}

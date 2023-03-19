@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AccountComponent } from './account/account.component';
 import { BillingComponent } from './billing/billing.component';
 import { ProfileComponent } from './profile.component';
+import { DatabindComponent } from '../databind/databind.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'billing',
         component: BillingComponent,
+      },
+      {
+        path: 'data-bind',
+        component: DatabindComponent,
       },
     ],
   },
